@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSec Terminal Game | لعبة الأمن السيبراني</title>
+    <meta name="description" content="Interactive cybersecurity terminal game with hacking challenges">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="title">
+                <span class="glow">⚡ CYBER SECURITY TERMINAL ⚡</span>
+            </h1>
+            <div class="stats">
+                <span class="level-indicator">LEVEL: <span id="current-level">1</span>/5</span>
+                <span class="score-indicator">SCORE: <span id="score">0</span>/100</span>
+            </div>
+        </div>
+
+        <!-- Terminal Display -->
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <span class="terminal-title">root@cyberwarrier:~$</span>
+                <div class="terminal-buttons">
+                    <span class="btn-close"></span>
+                    <span class="btn-minimize"></span>
+                    <span class="btn-maximize"></span>
+                </div>
+            </div>
+            
+            <div class="terminal-screen" id="terminal-output">
+                <!-- Terminal output will be displayed here -->
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-container">
+                <span class="prompt" id="prompt">root@system:~$</span>
+                <input 
+                    type="text" 
+                    id="command-input" 
+                    class="command-input" 
+                    autocomplete="off"
+                    spellcheck="false"
+                    autofocus
+                />
+                <span class="cursor"></span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Press ENTER to submit commands | Type your answers carefully</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
